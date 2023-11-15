@@ -23,6 +23,7 @@ return {
       luasnip.config.setup {enable_autosnippets = true}
 
       cmp.setup {
+        enabled = true,
         snippet = {
           expand = function(args)
           luasnip.lsp_expand(args.body)
