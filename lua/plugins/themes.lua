@@ -6,8 +6,21 @@ return {
     config = function()
       vim.cmd.colorscheme 'onedark'
       require('onedark').setup({
-        style = 'darker'
+        style = 'darker',
       })
     end,
   },
+--   {
+--   "folke/tokyonight.nvim",
+--   config = function()
+--       vim.cmd.colorscheme 'tokyonight-night'
+--   end,
+--   opts = {
+--     transparent = true,
+--     styles = {
+--       sidebars = "transparent",
+--       floats = "transparent",
+--     },
+--   },
+-- },
 }
