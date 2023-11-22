@@ -6,8 +6,8 @@ return {
       'nvim-treesitter/nvim-treesitter-textobjects',
     },
     build = ':TSUpdate',
-    event = 'VeryLazy',
-    config = function()
+    -- event = 'VeryLazy',
+    config = vim.defer_fn(function()
     require('nvim-treesitter.configs').setup {
       -- Add languages to be installed here that you want installed for treesitter
       ensure_installed = { 'c', 'cpp', 'lua', 'python', 'rust', 'tsx', 'javascript', 'typescript', 'vimdoc', 'vim', 'bash', 'query', 'latex', 'markdown_inline' },
@@ -76,7 +76,7 @@ return {
         },
       },
     }
-    end,
+    end, 0),
   },
 
 }
