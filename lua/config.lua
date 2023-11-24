@@ -47,6 +47,7 @@ vim.opt.tabstop = 2
 vim.opt.expandtab = true
 vim.opt.fileencoding = "utf-8" -- file content encoding for the buffer
 vim.opt.swapfile = false
+vim.opt.smartindent = true
 
 vim.api.nvim_set_keymap("i", "<C-y>", "<Plug>luasnip-next-choice", {})
 vim.api.nvim_set_keymap("s", "<C-y>", "<Plug>luasnip-next-choice", {})
